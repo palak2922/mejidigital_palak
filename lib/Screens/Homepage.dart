@@ -15,7 +15,6 @@ class _MyHomePageState extends State<MyHomePage> {
   FirebaseFirestore db = FirebaseFirestore.instance;
   Stream? todotask;
 
-  int tasklength = 0;
 
   getdata() async{
     todotask = await databaseService().getTask();
@@ -70,7 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
             child:  ListView.builder(
               itemBuilder: (context, index) {
                 DocumentSnapshot task = snapshot.data.docs[index];
-                tasklength = snapshot.data.docs.length;
                 return Container(
                   margin: const EdgeInsets.symmetric(vertical: 16),
                   decoration: BoxDecoration(
@@ -126,7 +124,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             onTap: (){
                               setState(() {
                                 databaseService().markcompleteTask(task['id']);
-                                tasklength = snapshot.data.docs.length;
                               });
                             },
                             child: const Icon(Icons.mark_chat_read_outlined, color: Colors.teal,),

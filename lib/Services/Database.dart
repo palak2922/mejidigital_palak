@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class databaseService{
 
@@ -9,10 +8,9 @@ class databaseService{
         .collection("Task")
         .doc(id)
         .set(taskinfo).then((value){
-      print('==============================================savedddddddddddddddddddd==========================================================');
-      // print(value.toString());
+      print('============================================== saved ==========================================================');
     }).catchError((err){
-          print('==============================================errorrrrrrrrrrr==========================================================');
+          print('============================================== error ==========================================================');
           print(err);
     });
 
