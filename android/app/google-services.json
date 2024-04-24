@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916257874968",
+    "project_id": "mejidigital",
+    "storage_bucket": "mejidigital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916257874968:android:c557be6f0eed0b4a634f6d",
+        "android_client_info": {
+          "package_name": "com.example.meji"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ-aK45XqR1LtFMTiJTYR_haDL65DqJ2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916257874968:android:1939023296a20647634f6d",
+        "android_client_info": {
+          "package_name": "com.example.mejidigital"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ-aK45XqR1LtFMTiJTYR_haDL65DqJ2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
